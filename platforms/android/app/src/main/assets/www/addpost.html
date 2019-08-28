@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <title>SNP</title>
+    </head>
+    <body>
+<div data-role="page">
+        <div data-role="header" data-theme="b" class="header">
+            <h1 id="app-title">SNP</h1>
+            <a href="listpost.html" class="ui-btn ui-btn-right ui-btn-corner-all ui-icon-grid ui-btn-icon-notext" rel="external">List</a>
+        </div>
+        <div role="main" class="ui-content">
+            <h3>Poster une photo</h3>
+            <label for="txt-qtr">Quartier de la zone </label>
+            <input type="text" name="txt-qtr" id="txt-qtr" placeholder="Quartier de la zone" value="">
+            <label for="txt-qtr">Image de la zone </label>
+            <img id="img-post" src="img/200x150.png" alt="img" class="img-post">
+            <p>
+                <button class="ui-btn ui-btn-inline" type="button" id="btn-photo">Prendre une photo</button>
+            </p>
+            <button type="button" id="btn-post" class="ui-btn ui-btn-b">Poster</button>
+        </div>
+        <footer data-theme="b" data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" id="listpost" data-icon="grid">liste</a></li>
+                            <li><a href="#" id="deconnexion" data-icon="lock">Deconnxion</a></li>
+                        </ul>
+                </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/addpost.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <title>SNP</title>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header" data-theme="b">
+                <h1>SNP</h1>
+                <a class="ui-btn ui-btn-right ui-btn-corner-all ui-icon-back ui-btn-icon-notext" href="index.html" rel="external">Back</a>
+            </div>
+            <div role="main" class="ui-content" id="contentone" >
+                <div class="center-wrapper">
+                        <h3>Connexion</h3>
+                </div>
+                <label for="txt-email">Adresse e-mail</label>
+                <input type="email" name="txt-email" id="txt-email" placeholder="Adresse e-mail" value="">
+                <label for="txt-password">Mot de passe </label>
+                <input type="password" name="txt-password" id="txt-password" placeholder="Mot de passe" value="">
+                <button type="button" id="btn-connexion" class="ui-btn ui-btn-b">Connexion</button>
+                <div class="center-wrapper">
+                    <p class="mc-top-margin-1-5"><a id="btn-signup">Vous n'avez pas de compte?</a></p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+    </body>
+</html>

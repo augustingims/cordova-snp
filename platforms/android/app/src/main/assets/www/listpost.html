@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <title>SNP</title>
+    </head>
+    <body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b" class="header">
+            <h1 id="app-title">SNP</h1>
+            <a href="addpost.html" class="ui-btn ui-btn-right ui-btn-corner-all ui-icon-plus ui-btn-icon-notext" rel="external">post</a>
+        </div>
+        <div role="main" class="ui-content">
+            <div id="list-post">
+                <ul style="display: none;" id="listpost" data-role="listview">
+                </ul>
+                <p id="not-data" style="display: none;">Pas de données disponibles, merci de poster</p>
+            </div>
+        </div>
+        <footer data-theme="b" data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" id="addpost" data-icon="plus">Poster</a></li>
+                            <li><a href="#" id="deconnexion" data-icon="lock">Deconnxion</a></li>
+                        </ul>
+                </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/listpost.js"></script>
+    </body>
+</html>
